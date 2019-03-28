@@ -7,7 +7,7 @@
 insert into nome_tabela values
 (defalut, ‘isaac’, ‘1990-05-27’, ‘M’, ‘68,8’, ‘1,75’, ‘Brasil’);
 ```
-#### Mostrar os registro e uma tabela:
+#### Mostrar os registros de uma tabela:
 ```
 select * from nome_tabela
 ```
@@ -54,3 +54,16 @@ rename to nome_novo;
 alter table nome_tabela
 add primary key (nome_coluna);
 ```
+
+#### Exemplo de uma tabela:
+```
+create table if not exists cursos (
+nome varchar(30) not null unique,
+descricao text,
+carga int unsigned,
+totaulas int unsigned,
+ano year default '2016'
+) default charset=utf8;
+```
+* unique é diferente de primary key
+
