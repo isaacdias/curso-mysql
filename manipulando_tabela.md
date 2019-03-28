@@ -1,4 +1,4 @@
-# Inserindo dados na tabela
+## Inserindo dados na tabela
 
 **DML – data manipulation language**
 
@@ -11,7 +11,7 @@ insert into nome_tabela values
 ```
 select * from nome_tabela
 ```
-### Alterando estrutura de uma tabela (alter table)
+## Alterando estrutura de uma tabela (alter table)
 
 
 
