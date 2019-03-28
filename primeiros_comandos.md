@@ -11,9 +11,9 @@ comando para acessar o MySQL localhost
 -p refere-se a senha que será solicitada logo depois
 
 
-**show databases;**
+    **show databases;**
 
-    mostra os bancos de dados existentes.
+mostra os bancos de dados existentes.
 
 **create database nome_banco_de_dados;**
 
