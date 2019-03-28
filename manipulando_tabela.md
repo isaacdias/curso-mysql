@@ -1,4 +1,4 @@
-## Inserindo dados na tabela
+## Manipulando uma tabela
 
 **DML – data manipulation language**
 
@@ -13,6 +13,11 @@ select * from nome_tabela
 ```
 ## Alterando estrutura de uma tabela (alter table)
 
+### Adicionar uma nova coluna a tabela
+```
+alter table nome_tabela
+-> add column nome_da_coluna varchar (10);
+``` 
 
 
 
