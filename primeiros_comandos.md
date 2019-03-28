@@ -13,7 +13,7 @@ comando para acessar o MySQL localhost
 
 **show databases;**
 
-- mostra os bancos de dados existentes.
+> mostra os bancos de dados existentes.
 
 **create database nome_banco_de_dados;**
 
