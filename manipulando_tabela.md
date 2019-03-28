@@ -13,11 +13,23 @@ select * from nome_tabela
 ```
 ## Alterando estrutura de uma tabela (alter table)
 
-### Adicionar uma nova coluna a tabela
+#### Adicionar uma nova coluna a tabela
 ```
 alter table nome_tabela
--> add column nome_da_coluna varchar (10);
+add column nome_da_coluna varchar (10);
 ``` 
-
+```
+alter table nome_tabela
+add column nome_da_coluna varchar (10) after nome_coluna_existente;
+```
+```
+alter table nome_tabela
+add column nome_da_coluna varchar (10) first;
+```
+#### Remover uma coluna
+```
+alter table nome_tabela
+drop column nome_da_coluna;
+```
 
 
