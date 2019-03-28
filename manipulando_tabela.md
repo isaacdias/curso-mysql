@@ -13,13 +13,13 @@ select * from nome_tabela
 ```
 ## Alterando estrutura de uma tabela (alter table)
 
-#### Adicionar uma nova coluna a tabela
+#### Adicionar uma nova coluna a tabela:
 * adiciona a coluna na utima posição
 ```
 alter table nome_tabela
 add column nome_da_coluna varchar (10);
 ``` 
-* adiciona a coluna na após a coluna escolhida
+* adiciona a coluna após outra coluna escolhida
 ```
 alter table nome_tabela
 add column nome_da_coluna varchar (10) after nome_coluna_existente;
@@ -29,10 +29,28 @@ add column nome_da_coluna varchar (10) after nome_coluna_existente;
 alter table nome_tabela
 add column nome_da_coluna varchar (10) first;
 ```
-#### Remover uma coluna
+#### Remover uma coluna:
 ```
 alter table nome_tabela
 drop column nome_da_coluna;
 ```
-
-
+#### Alterar a definição da coluna:
+```
+alter table nome_tabela
+modify column nome_da_coluna varchar (20); 
+```
+#### Alterar o nome da coluna:
+```
+alter table nome_tabela
+change column nome_atual_da_coluna nome_novo varchar (20); 
+```
+#### Alterar o nome da tabela:
+```
+alter table nome_tabela
+rename to nome_novo;
+```
+#### Tornar uma coluna como chave primária:
+```
+alter table nome_tabela
+add primary key (nome_coluna);
+```
