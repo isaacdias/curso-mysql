@@ -43,8 +43,8 @@ comando para acessar o MySQL localhost
 
 - configura para linguagem brasileira reconhecendo acentuação
 
-...
+```
 
 create table pessoas(
 nome varchar(30) not null auot_increment,
-...
+```
