@@ -1,7 +1,7 @@
-# Primeiros comandos no MySQL
+i# Primeiros comandos no MySQL
 
 **mysql -h localhost -u root -p** 
- comando para acessar o MySQL localhost
- -h refere-se ao local
- -u refere-se ao usuário
- -p refere-se a senha que será solicitada logo depois
+- comando para acessar o MySQL localhost
+- -h refere-se ao local
+- -u refere-se ao usuário
+- -p refere-se a senha que será solicitada logo depois
