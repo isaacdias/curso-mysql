@@ -18,6 +18,7 @@ select * from nome_tabela
 alter table nome_tabela
 add column nome_da_coluna varchar (10);
 ``` 
+*adiciona a coluna na ultima posição*
 ```
 alter table nome_tabela
 add column nome_da_coluna varchar (10) after nome_coluna_existente;
