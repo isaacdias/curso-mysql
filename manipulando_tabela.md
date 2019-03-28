@@ -14,11 +14,12 @@ select * from nome_tabela
 ## Alterando estrutura de uma tabela (alter table)
 
 #### Adicionar uma nova coluna a tabela
+* adiciona a coluna na utima posição
 ```
 alter table nome_tabela
 add column nome_da_coluna varchar (10);
 ``` 
-*adiciona a coluna na ultima posição*
+*adiciona a coluna na após a coluna escolhida*
 ```
 alter table nome_tabela
 add column nome_da_coluna varchar (10) after nome_coluna_existente;
