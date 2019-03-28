@@ -39,3 +39,5 @@ comando para acessar o MySQL localhost
 
 - apaga o banco de dados
 
+**default character set utf8**
+- configura para linguagem brasileira reconhecendo acentuação
