@@ -19,11 +19,12 @@ select * from nome_tabela
 alter table nome_tabela
 add column nome_da_coluna varchar (10);
 ``` 
-*adiciona a coluna na após a coluna escolhida*
+* adiciona a coluna na após a coluna escolhida
 ```
 alter table nome_tabela
 add column nome_da_coluna varchar (10) after nome_coluna_existente;
 ```
+* adiciona a coluna na primeira posição
 ```
 alter table nome_tabela
 add column nome_da_coluna varchar (10) first;
