@@ -21,7 +21,7 @@ comando para acessar o MySQL localhost
 
 **use nome_banco_de_dados;**
 
-- acessa o banco de dados escolido
+- acessa o banco de dados escolhido
 
 **show tables;**
 
