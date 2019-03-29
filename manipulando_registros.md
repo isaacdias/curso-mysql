@@ -18,7 +18,7 @@ limit 1;
 #### Apagar uma linha da tabela:
 ```
 delete from nome_tabela
-where primary_hey = 'x';
+where coluna_chave_primaria = 'chave_primaria';
 ```
 #### Apagar todos os registros de uma tabela:
 ```
