@@ -1,5 +1,16 @@
 ## Select
 
++-----------+------------------+------+-----+---------+-------+
+| Field     | Type             | Null | Key | Default | Extra |
++-----------+------------------+------+-----+---------+-------+
+| idcurso   | int(11)          | NO   | PRI | 0       |       |
+| nome      | varchar(30)      | NO   | UNI | NULL    |       |
+| descricao | text             | YES  |     | NULL    |       |
+| carga     | int(10) unsigned | YES  |     | NULL    |       |
+| totaulas  | int(10) unsigned | YES  |     | NULL    |       |
+| ano       | year(4)          | YES  |     | 2016    |       |
++-----------+------------------+------+-----+---------+-------+
+
 #### Mostrar os registros por ordem de acordo com a coluna escolhida:
 ```
 select * from cursos
