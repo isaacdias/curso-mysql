@@ -1,6 +1,8 @@
 ## Select
+* Tabela 'cursos' criada para os exemplos abaixo.
 
 ```
++-----------+------------------+------+-----+---------+-------+
 | Field     | Type             | Null | Key | Default | Extra |
 +-----------+------------------+------+-----+---------+-------+
 | idcurso   | int(11)          | NO   | PRI | 0       |       |
