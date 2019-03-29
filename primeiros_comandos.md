@@ -1,48 +1,45 @@
-# Primeiros comandos no MySQL
+# Primeiros comandos no MySQL 
 
-**mysql -h localhost -u root -p** 
+#### Comando para acessar o MySQL localhost:
+```
+mysql -h localhost -u root -p
+```
+* -h refere-se ao local
+* -u refere-se ao usuário
+* -p refere-se a senha que será solicitada logo depois
 
-comando para acessar o MySQL localhost
+#### Mostrar os bancos de dados existentes:
+```
+show databases;
+```
+#### Criar um banco de dados:
+```
+create database nome_banco_de_dados;
+```
+#### Acessar o banco de dados:
+```
+use nome_banco_de_dados;
+```
+#### Mostrar as tabelas existentes;
 
-    -h refere-se ao local
-
-    -u refere-se ao usuário
-
-    -p refere-se a senha que será solicitada logo depois
-
-
-**show databases;**
-
-- mostra os bancos de dados existentes.
-
-**create database nome_banco_de_dados;**
-
-- cria um banco de dados
-
-**use nome_banco_de_dados;**
-
-- acessa o banco de dados escolhido
-
-**show tables;**
-
-- mostra as tabelas existentes
-
-**create table nome_tabela;**
-
-- cria uma nova tabela
-
-**describe nome_tabela;**
-
-- mostra a estrutura da tabela 
-
-**drop database nome_banco_de_dados;**
-
-- apaga o banco de dados
-
+#### Criar uma nova tabela:
+```
+create table nome_tabela;
+```
+#### Mostrar a estrutura da tabela:
+```
+describe nome_tabela; 
+```
+#### Apagar o banco de dados:
+```
+drop database nome_banco_de_dados;
+```
 **default character set utf8**
 
-- configura para linguagem brasileira reconhecendo acentuação
-
+#### Configurar para linguagem brasileira reconhecendo acentuação:
+```
+default charset = utf8
+```
 ### Criando uma tabela
 
 ```
