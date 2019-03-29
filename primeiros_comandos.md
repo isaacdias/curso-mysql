@@ -34,8 +34,6 @@ describe nome_tabela;
 ```
 drop database nome_banco_de_dados;
 ```
-**default character set utf8**
-
 #### Configurar para linguagem brasileira reconhecendo acentuação:
 ```
 default charset = utf8
