@@ -37,7 +37,7 @@ order by alunos.nome;
 ```
 * Exibe todas as informações dando preferencia a tabela da esquerda do join
 ```
-select g.nome, c.nome, c.ano
+select a.nome, c.nome, c.ano
 from alunos as a left outer join cursos as c
 on a.cursopreferido = c.idcurso;
 ```
@@ -49,7 +49,7 @@ on a.cursopreferido = c.idcurso;
 ```
 #### Muitos-para-muitos
 ```
-create table aluno_assiste_curso(
+create table matriculados(
 id int not null auto_increment,
 data date,
 idaluno int,
@@ -61,14 +61,14 @@ foreign key (idcurso) references cursos(idcurso)
 ```
 
 ```
-insert into aluno_assiste_curso values
+insert into matriculados values
 (default, '2014-03-01', '1', '2');
 ```
 
 ```
 select a.nome, c.nome from aluno a 
-join aluno_assiste_curso assis 
-on a.id = assis.idaluno
-join cursos c on c.idcurso = assis.idcurso 
+join matriculados m 
+on a.id = m.idaluno
+join cursos c on c.idcurso = m.idcurso 
 order by g.nome;
 ```
