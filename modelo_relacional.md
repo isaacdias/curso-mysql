@@ -32,7 +32,7 @@ update alunos
 ```
 select alunos.nome, alunos.cursopreferido, cursos.nome, cursos.ano
 from alunos join cursos
-on cursos.idcursos = alunos.cursopreferido
+on cursos.idcurso = alunos.cursopreferido
 order by alunos.nome;
 ```
 * Exibe todas as informações dando preferencia a tabela da esquerda do join
@@ -66,9 +66,9 @@ insert into matriculados values
 ```
 
 ```
-select a.nome, c.nome from aluno a 
+select a.nome, c.nome from alunos a 
 join matriculados m 
 on a.id = m.idaluno
 join cursos c on c.idcurso = m.idcurso 
-order by g.nome;
+order by a.nome;
 ```
