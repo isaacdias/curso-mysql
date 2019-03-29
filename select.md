@@ -1,6 +1,6 @@
 ## Select
 
-+-----------+------------------+------+-----+---------+-------+
+```
 | Field     | Type             | Null | Key | Default | Extra |
 +-----------+------------------+------+-----+---------+-------+
 | idcurso   | int(11)          | NO   | PRI | 0       |       |
@@ -10,6 +10,7 @@
 | totaulas  | int(10) unsigned | YES  |     | NULL    |       |
 | ano       | year(4)          | YES  |     | 2016    |       |
 +-----------+------------------+------+-----+---------+-------+
+```
 
 #### Mostrar os registros por ordem de acordo com a coluna escolhida:
 ```
