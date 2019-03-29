@@ -45,7 +45,7 @@ select * from cursos
 where carga > 30 and totaulas <= 20
 order by totaulas;
 ```
-#### Filtar os registros que comecem com uma determinada letra:
+#### Filtrar os registros que comecem com uma determinada letra:
 * não fumciona sem aspas simples, posso colocar % na frente para exibir as que terminam com P, posso colocar % no final para exibir s que terminam com P e também posso colocar P entre dois % para exibir qualquer registro que contenha a letra P. NOT LIKE exibe os registros que não contem o parâmetro escolhido.
 ```
 select * from cursos
@@ -56,7 +56,7 @@ select * from cursos
 select distinct profissao from gafanhotos
 order by profissao;
 ``` 
-#### Mostra o numero de registros:
+#### Mostrar o numero de registros:
 ```
 select count(*) from cursos;
 ``` 
