@@ -15,5 +15,13 @@ set nome_coluna = ‘novo_registro’, set nome_coluna = 'novo_registro
 where coluna_chave_primaria = ‘chave_primaria’
 limit 1;
 ```
-
+#### Apagar uma linha da tabela:
+```
+delete from nome_tabela
+where primary_hey = 'x';
+```
+#### Apagar todos os registros de uma tabela:
+```
+truncate nome_tabela;
+```
 
