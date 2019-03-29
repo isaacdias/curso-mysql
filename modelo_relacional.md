@@ -22,7 +22,7 @@ add foreign key (nome_coluna)
 references nome_tabela(nome_chave_primaria);
 ```
 ```
-update gafanhotos
+update alunos
 -> set cursopreferido = '6'
 -> where id = '1';
 ```
@@ -30,45 +30,45 @@ update gafanhotos
 * Aqui conseguimos exibir registros das duas tabelas ao mesmo tempo fazendo uma junção.
 
 ```
-select gafanhotos.nome, gafanhotos.cursopreferido, cursos.nome, cursos.ano
-from gafanhotos join cursos
-on cursos.idcursos = gafanhotos.cursopreferido
-order by gafanhotos.nome;
+select alunos.nome, alunos.cursopreferido, cursos.nome, cursos.ano
+from alunos join cursos
+on cursos.idcursos = alunos.cursopreferido
+order by alunos.nome;
 ```
 * Exibe todas as informações dando preferencia a tabela da esquerda do join
 ```
 select g.nome, c.nome, c.ano
-from gafanhotos as g left outer join cursos as c
-on g.cursopreferido = c.idcurso;
+from alunos as a left outer join cursos as c
+on a.cursopreferido = c.idcurso;
 ```
 * Exibe todos as relações dando prioridade a tabela da direita do join
 ```
-select g.nome, c.nome, c.ano
-from gafanhotos as g right outer join cursos as c
-on g.cursopreferido = c.idcurso;
+select a.nome, c.nome, c.ano
+from alunos as a right outer join cursos as c
+on a.cursopreferido = c.idcurso;
 ```
 #### Muitos-para-muitos
 ```
-create table gafanhoto_assiste_curso(
+create table aluno_assiste_curso(
 id int not null auto_increment,
 data date,
-idgafanhoto int,
+idaluno int,
 idcurso int,
 primary key(id),
-foreign key (idgafanhoto) references gafanhotos(id),
+foreign key (idaluno) references alunos(id),
 foreign key (idcurso) references cursos(idcurso)
 ) default charset = utf8;
 ```
 
 ```
-insert into gafanhoto_assiste_curso values
+insert into aluno_assiste_curso values
 (default, '2014-03-01', '1', '2');
 ```
 
 ```
-select g.nome, c.nome from gafanhotos g 
-join gafanhoto_assiste_curso a 
-on g.id = a.idgafanhoto
-join cursos c on c.idcurso = a.idcurso 
+select a.nome, c.nome from aluno a 
+join aluno_assiste_curso assis 
+on a.id = assis.idaluno
+join cursos c on c.idcurso = assis.idcurso 
 order by g.nome;
 ```
